@@ -29,3 +29,28 @@ const list3Filter = list3.sort((firEle, secEle)=>{
     }
 
 });
+
+// 在陣列的最後一筆新增資料
+const list4 = ['今天', '是', '大年'];
+list4.push('初二');
+console.log(list4);
+
+// 移除陣列最後一筆資料
+list4.pop();
+console.log(list4);
+
+// 在陣列的第一筆新增資料
+list4.unshift('Hi,');
+console.log(list4);
+
+// 移除陣列第一筆資料
+list4.shift('Hi,');
+console.log(list4);
+
+// 回傳指定元素在陣列中的 index
+const targetIndex = list4.indexOf('今天');
+console.log(targetIndex);
+
+// 判斷指定陣列中是否有指定的元素，回傳值為布林
+const isTarget= list4.includes('今天');
+console.log(isTarget);
