@@ -54,3 +54,8 @@ console.log(targetIndex);
 // 判斷指定陣列中是否有指定的元素，回傳值為布林
 const isTarget= list4.includes('今天');
 console.log(isTarget);
+
+// 刪除陣列中的指定資料
+const list5 = [1, 3, 5, 7,8, 9, 10];
+const list5Filter = list5.filter((item)=> item%2 !==0);
+console.log(list5Filter);
