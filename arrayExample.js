@@ -59,3 +59,9 @@ console.log(isTarget);
 const list5 = [1, 3, 5, 7,8, 9, 10];
 const list5Filter = list5.filter((item)=> item%2 !==0);
 console.log(list5Filter);
+
+// 使用 findIndex 方法，查找第一個符合特定條件的陣列元素
+// 如果不是要將所有符合的元素都找出來，使用 findIndex 效能會更好
+// 任務：找到陣列中第一個為紅色的水果
+const list6 = ['紅色的蘋果', '綠色的蘋果', '黃色的水梨', '紅色的桃子']
+const fruitfilter = list6.findIndex(item => item.includes('紅色'));
